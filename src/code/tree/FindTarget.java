@@ -17,9 +17,6 @@ public class FindTarget {
         while (i < j) {
             int left = list.get(i);
             int right = list.get(j);
-            if (left == k || right == k) {
-                return true;
-            }
             int sum = left + right;
             if (sum == k) {
                 return true;
