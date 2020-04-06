@@ -3,3 +3,4 @@ out
 src/Solution.java
 *.xml
 *.iml
+*.gitignore
