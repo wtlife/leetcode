@@ -18,10 +18,10 @@ public class GenerateParenthesis {
         }
 
         if (left > 0) {
-            dfs(left--, right, s + "(");
+            dfs(left-1, right, s + "(");
         }
         if (right > left) {
-            dfs(left, right--, s + ")");
+            dfs(left, right-1, s + ")");
         }
     }
 }
