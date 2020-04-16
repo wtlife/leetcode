@@ -10,9 +10,13 @@
     entity中包含了leetcode中用到的基本数据结构;
 
 ##### 习题分类导航  
-  
-   [树🌲](https://github.com/wtlife/leetcode/tree/master/src/code/tree)  
-   [剑指offer](https://github.com/wtlife/leetcode/tree/master/src/code/offer)    
+
+   -    常用算法:  
+        [经典数据结构与算法](https://github.com/wtlife/leetcode/tree/master/src/classic)
+   -    Leetcode分类：   
+        [2020.03~2020.04 每日一题](https://github.com/wtlife/leetcode/tree/master/src/code/daybyday)  
+        [树🌲](https://github.com/wtlife/leetcode/tree/master/src/code/tree)  
+        [剑指offer](https://github.com/wtlife/leetcode/tree/master/src/code/offer)    
     
  #### 一点点纪念
     祝大家也祝自己能斩获心仪的offer!
