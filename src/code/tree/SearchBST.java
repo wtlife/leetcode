@@ -2,6 +2,9 @@ package code.tree;
 
 import entity.TreeNode;
 
+/**
+ * 700. 二叉搜索树中的搜索
+ */
 public class SearchBST {
     public TreeNode searchBST(TreeNode root, int val) {
         if (root == null) {

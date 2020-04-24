@@ -37,7 +37,7 @@ public class WaysToChange {
         for (int i = 1; i < 4; i++) {
             for (int j = 0; j <= n; j++) {
                 if (j >= change[i]) {
-                    dp[j] = (dp[j] + dp[j - 1]) % 1000000007;
+                    dp[j] = (dp[j] + dp[j - change[i]]) % 1000000007;
                 }
             }
         }
