@@ -1,5 +1,8 @@
 package code.daybyday;
 
+/**
+ * 面试题51. 数组中的逆序对
+ */
 public class ReversePairs {
     public int reversePairs(int[] nums) {
         int len = nums.length;
