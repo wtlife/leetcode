@@ -68,5 +68,22 @@ public class MergeKLists {
 
         return head.next;
     }
-
+    public ListNode mergeKLists3(ListNode[] lists) {
+        if (lists.length == 0) {
+            return null;
+        }
+        int k = lists.length;
+        while (k > 1) {
+            int idx = 0;
+            for (int i = 0; i < k; i += 2) {
+                if (i == k - 1) {
+                    lists[idx++] = lists[i];
+                } else {
+                    lists[idx++] = merge2Lists(lists[i], lists[i + 1]);
+                }
+            }
+            k = idx;
+        }
+        return lists[0];
+    }
 }
