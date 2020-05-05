@@ -2,7 +2,10 @@ package code.tree;
 
 import entity.TreeNode;
 
-public class LowestCommonAncestor {
+/**
+ * 235. 二叉搜索树的最近公共祖先
+ */
+public class LowestCommonAncestor1 {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         int pVal = p.val;
         int qVal = q.val;
