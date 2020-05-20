@@ -1,7 +1,7 @@
 package code.daybyday.may;
 
 /**
- *
+ * 152. 乘积最大子数组
  */
 public class MaxProduct {
     public int maxProduct(int[] nums) {
