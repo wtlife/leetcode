@@ -1,4 +1,4 @@
-package code.offer1;
+package code.offer;
 
 import java.util.ArrayDeque;
 import java.util.Queue;
