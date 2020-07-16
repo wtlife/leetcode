@@ -3,6 +3,9 @@ package code.string;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 6. Z字形变换
+ */
 public class Convert {
     public String convert(String s, int numRows) {
         if (s.length()<2){
