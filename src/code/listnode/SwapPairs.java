@@ -31,10 +31,4 @@ public class SwapPairs {
         return pre.next;
     }
 
-
-//    private void swap(ListNode node) {
-//        while () {
-//
-//        }
-//    }
 }
