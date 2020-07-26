@@ -7,7 +7,7 @@ import entity.ListNode;
  */
 public class DetectCycle {
     public ListNode detectCycle(ListNode head) {
-        ListNode fast = head, slow = head;
+        ListNode fast = head.next, slow = head;
         while (true) {
             if (fast == null || fast.next == null) return null;
             fast = fast.next.next;
