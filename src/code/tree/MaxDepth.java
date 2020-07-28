@@ -5,6 +5,9 @@ import entity.TreeNode;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * 104. MaxDepth
+ */
 public class MaxDepth {
     public int maxDepth(TreeNode root) {
         if (root == null) {
@@ -27,6 +30,16 @@ public class MaxDepth {
                 }
             }
         }
-        return dep ;
+        return dep;
     }
+
+    public int maxDepth2(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+        int left = maxDepth2(root.left);
+        int right = maxDepth2(root.right);
+        return Math.max(left, right) + 1;
+    }
+
 }

@@ -5,6 +5,9 @@ import entity.TreeNode;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * 226. InvertTree
+ */
 public class InvertTree {
 
     public TreeNode invertTree(TreeNode root) {

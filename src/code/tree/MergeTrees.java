@@ -6,6 +6,9 @@ import java.util.ArrayDeque;
 import java.util.Queue;
 import java.util.Stack;
 
+/**
+ * 617.MergeTrees
+ */
 public class MergeTrees {
     public TreeNode mergeTrees(TreeNode t1, TreeNode t2) {
         if (t2 == null) {
