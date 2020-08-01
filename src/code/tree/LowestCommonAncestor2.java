@@ -2,6 +2,10 @@ package code.tree;
 
 import entity.TreeNode;
 
+/**
+ * @Desc   二叉树的最近公共祖先
+ * @date   2020/8/1
+ */
 public class LowestCommonAncestor2 {
     TreeNode ans;
 
