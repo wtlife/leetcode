@@ -1,7 +1,4 @@
-package code.offer;
-
-import java.util.HashSet;
-import java.util.Set;
+package code.sword;
 
 /**
  * 面试题03. 数组中重复的数字

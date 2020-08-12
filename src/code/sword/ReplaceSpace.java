@@ -1,4 +1,4 @@
-package code.offer;
+package code.sword;
 
 /**
  * sword05. 替换空格
