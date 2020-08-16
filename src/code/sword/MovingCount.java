@@ -4,7 +4,7 @@ import java.util.ArrayDeque;
 import java.util.Queue;
 
 /**
- * 面试题13.机器人的运动范围
+ * 13. moving count
  */
 public class MovingCount {
     public int movingCount(int m, int n, int k) {
@@ -43,5 +43,25 @@ public class MovingCount {
         }
         return sum;
     }
+
+    public int movingCount2(int m, int n, int k) {
+        boolean[][] visited = new boolean[m][n];
+        return moving(0, 0, m, n, k, visited);
+    }
+
+    private int moving(int i, int j, int m, int n, int k, boolean[][] visited) {
+        int count = 0;
+        if (i < 0 || i >= m || j < 0 || j >= n || (i / 10 + i % 10 + j / 10 + j % 10) > k || visited[i][j]) {
+            return count;
+        }
+        visited[i][j] = true;
+        count = 1 +
+                moving(i + 1, j, m, n, k, visited) +
+                moving(i - 1, j, m, n, k, visited) +
+                moving(i, j + 1, m, n, k, visited) +
+                moving(i, j - 1, m, n, k, visited);
+        return count;
+    }
+
 
 }
