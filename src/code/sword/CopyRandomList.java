@@ -1,28 +1,30 @@
-package code.listnode;
+package code.sword;
 
 
 /**
- * @Desc CopyRandomList
- * @date 2020/7/20
+ * @Desc 36.CopyRandomList
+ * @date 2020/8/23
  */
 public class CopyRandomList {
     public Node copyRandomList(Node head) {
         if (head == null) {
-            return null;
+            return head;
         }
-
-        // 复制next节点
         Node cur = head;
+
+        //copy node
         while (cur != null) {
+            Node next = cur.next;
             Node tmp = new Node(cur.val);
-            tmp.next = cur.next;
             cur.next = tmp;
+            tmp.next = next;
+
             cur = cur.next.next;
         }
 
-        //复制random节点
+        // copy random
         cur = head;
-        while (cur != null) {
+        while (cur != null && cur.next != null) {
             if (cur.random == null) {
                 cur.next.random = null;
             } else {
@@ -31,9 +33,9 @@ public class CopyRandomList {
             cur = cur.next.next;
         }
 
-        //截断
+        //split
         cur = head;
-        Node head2 = head.next;
+        Node head2 = cur.next;
         Node cur2 = head2;
         while (cur != null && cur.next != null) {
             Node next1 = cur2.next;
@@ -45,6 +47,7 @@ public class CopyRandomList {
             cur = cur.next;
             cur2 = cur2.next;
         }
+
         return head2;
     }
 
