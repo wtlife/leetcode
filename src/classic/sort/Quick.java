@@ -15,7 +15,7 @@ public class Quick {
         if (head >= tail) {
             return;
         }
-        int j = partition2(arr, head, tail);
+        int j = partition(arr, head, tail);
         quick(arr, head, j - 1);
         quick(arr, j + 1, tail);
     }
