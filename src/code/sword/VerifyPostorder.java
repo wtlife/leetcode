@@ -32,16 +32,4 @@ public class VerifyPostorder {
 
         return q==end && helper(start,p-1,postorder) && helper(p,end-1,postorder);
     }
-
-
-    public static void main(String[] args) {
-        int i =3;
-        add(i);
-        System.out.println(i);
-    }
-
-    public static void add (int i){
-        i=i+1;
-        System.out.println(i);
-    }
 }
