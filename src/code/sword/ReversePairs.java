@@ -69,10 +69,4 @@ public class ReversePairs {
         }
     }
 
-
-    public static void main(String[] args) {
-        ReversePairs reversePairs = new ReversePairs();
-        reversePairs.reversePairs2(new int[]{7, 5, 6, 4});
-    }
-
 }
