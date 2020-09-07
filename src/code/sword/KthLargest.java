@@ -7,7 +7,27 @@ import entity.TreeNode;
  * @date 2020/9/3
  */
 public class KthLargest {
+
+    int res = 0;
+    int k;
+
     public int kthLargest(TreeNode root, int k) {
-        return 0;
+        this.k = k;
+        helper(root);
+        return res;
+    }
+
+    private void helper(TreeNode root) {
+        if (root == null) {
+            return;
+        }
+        helper(root.right);
+        k--;
+        if (k == 0) {
+            res = root.val;
+            return;
+        }
+        helper(root.left);
+
     }
 }
