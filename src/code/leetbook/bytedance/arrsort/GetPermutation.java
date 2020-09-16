@@ -9,6 +9,7 @@ public class GetPermutation {
     int cnt = 0;
 
     public String getPermutation(int n, int k) {
+
         helper("",  n, k);
         return ans;
     }
