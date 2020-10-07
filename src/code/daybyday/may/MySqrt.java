@@ -7,7 +7,7 @@ public class MySqrt {
 
     public int mySqrt(int x) {
         int lo = 0, h = x;
-        int ans = 0;
+        int ans = -1;
         while (lo <= h) {
             int mid = lo + ((h - lo) >> 1);
             long temp =(long) mid * mid;
@@ -17,7 +17,7 @@ public class MySqrt {
 
             if (temp < x) {
                 lo = mid + 1;
-                ans = mid;
+                ans  = mid;
             } else if (temp > x) {
                 h = mid - 1;
             }
