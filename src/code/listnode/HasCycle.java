@@ -7,18 +7,14 @@ import entity.ListNode;
  */
 public class HasCycle {
     public boolean hasCycle(ListNode head) {
-        if (head==null||head.next==null){
-            return false;
-        }
+        ListNode fast = head;
         ListNode slow = head;
-        ListNode fast = head.next;
-        while (fast!=null&& fast.next!=null){
-            if (fast.val==slow.val){
+        while (fast != null && fast.next != null) {
+            fast = fast.next.next;
+            slow = slow.next;
+            if (slow==fast) {
                 return true;
             }
-            slow = slow.next;
-            fast=fast.next.next;
-
         }
         return false;
     }

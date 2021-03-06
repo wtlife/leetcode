@@ -8,7 +8,7 @@ import entity.TreeNode;
  */
 public class MaxPathSum {
 
-    private int res = 0;
+    private int res = Integer.MIN_VALUE;
 
     public int maxPathSum(TreeNode root) {
         recursive(root);

@@ -1,6 +1,8 @@
 package code.array;
 
 
+import entity.ListNode;
+
 /**
  * 4. 寻找两个正序数组的中位数
  */
@@ -22,11 +24,11 @@ public class FindMedianSortedArrays {
         int b = 0;
 
         while (true) {
-            if (len1 == 0) {
-                return nums2[k - 1];
+            if (a == len1) {
+                return nums2[b + k - 1];
             }
-            if (len2 == 0) {
-                return nums1[k - 1];
+            if (b == len2) {
+                return nums1[a + k - 1];
             }
             if (k == 1) {
                 return Math.min(nums1[a], nums2[b]);
@@ -72,7 +74,7 @@ public class FindMedianSortedArrays {
             if (nums1[i - 1] > nums2[j]) {
                 right = i - 1;
             } else {
-                left=i;
+                left = i;
             }
         }
 
